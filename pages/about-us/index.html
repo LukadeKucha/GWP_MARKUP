@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩვენს შესახებ</title>
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/about-us.css">
+</head>
+
+<body>
+
+    <div id="managment-popup" class="managment-popup">
+        <div class="managment-popup-content">
+            <span class="close-btn">&times;</span>
+            <div class="topside">
+                <img id="managment-popup-image" src="" alt="Management Image">
+                <div class="info">
+                    <p id="managment-popup-year"></p>
+                    <p class="heading-secondary" id="managment-popup-name"></p>
+                    <p class="text-link" id="managment-popup-title"></p>
+                </div>
+            </div>
+            <p class="text-primary" id="managment-popup-text"></p>
+            <div class="managment-popup-arrows">
+                <div class="p-circle l">
+                    <div class="circle-inside">
+                        <img src="../../assets/images/about/left.png" class="left-arrow">
+                    </div>
+                </div>
+                <div class="p-circle r">
+                    <div class="circle-inside">
+                        <img src="../../assets/images/about/right.png" class="right-arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="container space-between">
+        <div class="header-left flex">
+            <a class="logo-link" href="index.html">
+                <img src="../../assets/images/GWP-LOGO.png" alt="Logo">
+            </a>
+            <nav class="flex">   <!-- menu item with active class color -->
+                <li><a class="text menu-item" href="./pages/about-us/">ჩვენ შესახებ</a></li> 
+                <li class="dropdown-item">
+                    <a class="text" href="/pages/services/index.html">სერვისები</a>
+                    <ul class="dropdown-items">
+                        <li><a href="#">სერვისი 1</a></li>
+                        <li><a href="#">სერვისი 2 </a></li>
+                        <li><a href="#">სერვისი 3</a></li>
+                    </ul>
+                </li>
+                <li><a class="text menu-item" href="pages/NEWS/index.html">სიახლეები</a></li>
+                <li><a class="text menu-item" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text menu-item" href="./pages/contact/">კონტაქტი</a></li>
+            </nav>
+        </div>
+        <div class="header-right align-center">
+            <div class="header-search">
+                <input type="text" placeholder="ძიება">
+                <img src="../../assets/images/search-icon.png" alt="search icon">
+            </div>
+            <div class="header-lang">
+                <div class="active-lang">
+                    <img class="lang-globe" src="../../assets/images/globe-lang.png" alt="flag icon">
+                    <span>ENG</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    </li>
+                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
+                                alt="flag icon">ENG</a></li>
+                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-primary login-btn"><a href="/pages/cabinet/index.html">ჩემი კაბინეტი</a></button>
+        </div>
+    </header>
+
+    <!-- mobile header  -->
+    <nav class="mobile-menu-container">
+        <div class="mobile-head">
+            <div class="menu-toggle">
+                <img src="../../assets/images/icons/menu-burger.png" alt="Menu Toggle" id="menuToggle">
+            </div>
+            <div class="logo-mobile">
+                <img src="../../assets/images/GWP-LOGO.png" alt="Logo">
+            </div>
+            <div class="header-lang">
+                <div class="active-lang">
+                    <img class="lang-globe" src="../../assets/images/globe-lang.png" alt="flag icon">
+                    <span>ENG</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    </li>
+                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
+                                alt="flag icon">ENG</a></li>
+                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="space-between">
+                <h4 class="mobile-menu-heading">მენიუ</h4>
+                <div class="menu-close">
+                    <img src="../../assets/images/icons/close-burger.png" alt="Close Menu" id="menuClose">
+                </div>
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="ძიება">
+                <img src="../../assets/images/search-icon.png" alt="search icon">
+            </div>
+            <ul>
+                <li><a class="text-primary menu-item" href="#">ჩვენ შესახებ</a></li>
+                <li><a class="text-primary menu-item" href="#">ჩემი კაბინეტი</a></li>
+                <li><a class="text-primary menu-item" href="#">სიახლეები</a></li>
+                <li><a class="text-primary menu-item" href="#">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text-primary menu-item" href="#">კონტაქტი</a></li>
+            </ul>
+            <a href="#" class="btn-primary mobile-cabinets-btn">ჩემი კაბინეტი</a>
+        </div>
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </nav>
+    <div class="header-line"></div>
+    <!-- end header  -->
+
+
+    <div class="container">
+        <div class="topside-header">
+            <ul class="topside-nav-links">
+                <li class="topside-nav-item active"><a data-content="content1" data-layout="flex">საქმიანობა</a></li>
+                <li class="topside-nav-item"><a class="text" data-content="content2" data-layout="grid">მენეჯმენტი</a>
+                </li>
+                <li class="topside-nav-item"><a class="text" data-content="content3" data-layout="flex">ხარისხის
+                        მართვა</a></li>
+                <li class="topside-nav-item"><a class="text" data-content="content4"
+                        data-layout="flex">წყალმომარაგება</a>
+                </li>
+                <li class="topside-nav-item"><a class="text" data-content="content5" data-layout="flex">სოციალური
+                        პასუხისმგებლობა</a></li>
+                <li class="topside-nav-item"><a class="text" data-content="content6">ტარიფი</a></li>
+            </ul>
+        </div>
+
+        <div class="innerpage-container">
+            <div id="content1" class="content active flex-container">
+                <div class="innerpage-text-wrapper">
+                    <div class="heading-secondary">საქმიანობა</div>
+                    <div class="innerpage-text-container">
+                        <p class="text-primary">ჯორჯიან უოთერ ენდ ფაუერი წყლის რესურსებს ეკოლოგიურად სუფთა და მდგრადი
+                            გზით მოიპოვებს, ქმნის
+                            სასიცოცხლოდ მნიშვნელოვან პროდუქტს – მაღალი ხარისხის სასმელ წყალს, ახდენს მის
+                            ტრანსპორტირებასა და
+                            მომხმარებლისთვის მიწოდებას. კომპანია ასევე წყალარინების მომსახურებას ეწევა და მოხმარებული
+                            წყლის
+                            გატანას საკანალიზაციო ქსელების მეშვეობით უზრუნველყოფს.
+                        </p>
+                        <p class="text-primary">
+                            ჯორჯიან უოთერ ენდ ფაუერი ენერგეტიკის მიმართულებითაც საქმიანობს. ელექტროენერგიის წარმოება
+                            ჟინვალჰესზე, თეთრიხევიჰესზე და ბოდორნაჰესზე ხდება. ჰესები საქართველოს ერთიან
+                            ელექტროსისტემაშია
+                            ჩართული, გამომუშავებული ელექტროენერგია წყალმომარაგების ობიექტების ფუნქციონირებას ხმარდება. 
+                        </p>
+                    </div>
+                </div>
+
+                <img src="../../assets/images/about/saqmianoba.png">
+            </div>
+            <div id="content2" class="content grid" style="display: none;">
+                <div class="managment-item" data-name="ხოსე მიგელ სანტოს გონზალეზ" data-title="გენერალური დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/xose.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ხოსე მიგელ სანტოს გონზალეზ</p>
+                    <p class="managment-title">გენერალური დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="რამონ მარია პუჯოლ კერ" data-title="ფინანსური დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/2.png">
+                   <div class="managment-text">
+                    <p class="managment-name">რამონ მარია პუჯოლ კერ</p>
+                    <p class="managment-title">ფინანსური დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="ვიქტორ სოლის"
+                    data-title="წყლის წარმოების და ენერგეტიკის დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/3.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ვიქტორ სოლის</p>
+                    <p class="managment-title">წყლის წარმოების და ენერგეტიკის დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="ივან ნანეზ" data-title="მშენებლობისა და ინჟინერიის დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/4.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ივან ნანეზ</p>
+                    <p class="managment-title">მშენებლობისა და ინჟინერიის დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="ანტონიო კინტანა"
+                    data-title="წყალარინების და წყალსადენის ქსელების დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/5.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ანტონიო კინტანა</p>
+                    <p class="managment-title">წყალარინების და წყალსადენის ქსელების დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="ედუარდო სიენფუეგოს ალვარეზ" data-title="კომერციული დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/6.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ედუარდო სიენფუეგოს ალვარეზ</p>
+                    <p class="managment-title">კომერციული დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="პერე სალა"
+                    data-title="ოპერაციების მხარდაჭერა და წყლის ტექნოლოგიები"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/7.png">
+                   <div class="managment-text">
+                    <p class="managment-name">პერე სალა</p>
+                    <p class="managment-title">ოპერაციების მხარდაჭერა და წყლის ტექნოლოგიები</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="მიგელ ანხელ მაზო ესტებანეზ" data-title="GWP რუსთავის დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/8.png">
+                   <div class="managment-text">
+                    <p class="managment-name">მიგელ ანხელ მაზო ესტებანეზ</p>
+                    <p class="managment-title">GWP რუსთავის დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="გიგა ნადირაძე" data-title="აქტივების მართვის დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/9.png">
+                   <div class="managment-text">
+                    <p class="managment-name">გიგა ნადირაძე</p>
+                    <p class="managment-title">აქტივების მართვის დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="ოთარ დათუნაშვილი"
+                    data-title="ანალიტიკის, რეგულაციებისა და კონტროლის დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/10.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ოთარ დათუნაშვილი</p>
+                    <p class="managment-title">ანალიტიკის, რეგულაციებისა და კონტროლის დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="ეკატერინე ბერიძე"
+                    data-title="კომუნიკაციისა და კორპორაციული მომსახურების დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/11.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ეკატერინე ბერიძე</p>
+                    <p class="managment-title">კომუნიკაციისა და კორპორაციული მომსახურების დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="ჯაბა მამულაშვილი" data-title="იურიდიული დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/12.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ჯაბა მამულაშვილი</p>
+                    <p class="managment-title">იურიდიული დირექტორი</p>
+                   </div>
+                </div>
+
+
+                <div class="managment-item" data-name="რუსუდან სანიკიძე"
+                    data-title="ხალხისა და კულტურის, შრომის უსაფრთხოებისა და ადმინისტრაციის დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/13.png">
+                   <div class="managment-text">
+                    <p class="managment-name">რუსუდან სანიკიძე</p>
+                    <p class="managment-title">ხალხისა და კულტურის, შრომის უსაფრთხოებისა და ადმინისტრაციის დირექტორი</p>
+                   </div>
+                </div>
+
+                <div class="managment-item" data-name="ნინო წურწუმია" data-title="ფინანსური დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/14.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ნინო წურწუმია</p>
+                    <p class="managment-title">ფინანსური დირექტორიფინანსური დირექტორი</p>
+                   </div>
+                </div>
+
+
+                <div class="managment-item" data-name="ნინო წურწუმია" data-title="შესყიდვებისა და ლოგისტიკის დირექტორი"
+                    data-text="ეკატერინე ბერიძე  ჯორჯიან უოთერ ენდ ფაუერის კომუნიკაციისა და კორპორაციული მომსახურების დირექტორად 2013 წელს დაინიშნა. 2013 წლამდე ეკატერინე სხვადასხვა წამყვან სატელევიზიო არხებზე - მეცხრე არხი, ტელეკომპანია მაესტრო, საზოგადოებრივი მაუწყებელი, ტელეკომპანია მზე, რუთავი 2 - საინფორმაციო გადაცემების,  ტოკშოუებისა და  საავტორო გადაცემების წამყვანი და პროდუსერი იყო. ეკატერინე ბერიძე  ფლობს  თავისუფალი უნივერსიტეტი (ბიზნესის სკოლა ESM)  - MBA ხარისხსა და თბილისის სახელმწიფო უნივერსიტეტის  ფილოლოგიის ბაკალავრის ხარისხს."
+                    data-year="2013">
+                    <img src="../../assets/images/about/managment/15.png">
+                   <div class="managment-text">
+                    <p class="managment-name">ირაკლი ხვადაგაძე</p>
+                    <p class="managment-title">შესყიდვებისა და ლოგისტიკის დირექტორი</p>
+                   </div>
+                </div>
+            </div>
+            <div id="content3" class="content" style="display: none;">
+                <div class="innerpage-text-wrapper">
+                    <div class="heading-secondary">ხარისხის მართვა</div>
+                    <div class="innerpage-text-container">
+                        <p class="text-primary">ჯორჯიან უოთერ ენდ ფაუერის მართვა საერთაშორისო სტანდარტების მიხედვით
+                            ხორციელდება. კომპანიამ ხარისხის მართვის საერთაშორისო სისტემის ISO-9001 სტანდარტის შესაბამისი
+                            სერთიფიკატი 2006 წელს მიიღო.
+                        </p>
+                        <p class="text-primary">
+                            ხარისხის მართვის სერთიფიკატის მოპოვება და მისი მოთხოვნების დანერგვა კომპანიას ავალდებულებს
+                            მუდმივად იყოს ორიენტირებული მომსახურების გაუმჯობესებაზე, წარმოების ეფექტურობის ზრდაზე,
+                            ტექნიკური და ტექნოლოგიური ოპერაციების წარმართვის მკაფიოდ რეგლამენტირებასა და კომპანიის
+                            პერსონალის მოტივირებულ ქმედებებზე.
+                        </p>
+
+                        <p class="text-primary">
+                            ხარისხის მართვის სერთიფიკატის შენარჩუნება ეფუძნება კომპანიის საქმიანობის მუდმივ მონიტორინგს.
+                            ამ მიმართულებით ჯორჯიან უოთერ ენდ ფაუერი აგრძელებს მნიშვნელოვანი პროექტების და
+                            სარეაბილიტაციო სამუშაოების განხორციელებას თბილისისა და ქალაქ მცხეთის მოსახლეობის მაღალი
+                            ხარისხის სასმელი წყლით სტაბილურად უზრუნველყოფის მიზნით. 
+                        </p>
+                    </div>
+                </div>
+                <img src="../../assets/images/about/xarisxismartva.png">
+            </div>
+            <div id="content4" class="content" style="display: none; flex-direction: column; gap: 32px;">
+                <div class="flex-1">
+                    <div class="innerpage-text-wrapper">
+                        <div class="heading-secondary">წყალმომარაგება</div>
+                        <div class="innerpage-text-container">
+                            <p class="text-primary">სასმელი წყალი ყოველდღიური მოხმარების სასიცოცხლო მნიშვნელობის
+                                პროდუქტია,
+                                რომლის შექმნა-დამუშავება და მომხმარებლამდე მიწოდება კომპლექსური პროცესია. 
+                            </p>
+                            <p class="text-primary">
+                                დედაქალაქის წყალმომარაგება ოთხ ძირითად საფეხურს გადის:
+                                წყალაღება, წყლის ხარისხის სტანდარტამდე დაყვანა, წყლის ტრანსპორტირება, მომხმარებლებზე
+                                განაწილება. 
+                            </p>
+
+                            <p class="text-primary">
+                                არსებობს წყალმომარაგების ორი ტიპის წყარო - მიწისქვეშა და ზედაპირული. ნედლი წყლის
+                                ხარისხის
+                                გამო პრიორიტეტულია მიწისქვეშა წყალაღება.თბილისის წყალმომარაგების სისტემაში ორივე ტიპის
+                                წყალაღება გამოიყენება. მიწისქვეშა წყლების მოპოვება ხდება მდინარე არაგვის ხეობაში, ხოლო
+                                ზედაპირული წყალაღება ხორციელდება მდინარე არაგვიდან, მათ შორის ჟინვალის წყალსაცავიდან და
+                                ნაწილობრივ თბილისის ზღვიდან, ღრმაღელესა და სამგორის სათავე ნაგებობების საშუალებით.
+                            </p>
+
+                            <p class="text-primary">
+                                წყლის ხარისხის სტანდარტამდე დაყვანის შემდეგ ხდება მისი ტრასპორტირება და დაგროვება
+                                სარეგულაციო რეზერვუარებში. დედაქალაქის ტერიტორიაზე განთავსებულია 300 000 მ2 ტევადობის
+                                რეზერვუარები, მძლავრი სატუმბო სადგურები, ადგილობრივი წნევის მარეგულირებელი სადგურები და
+                                წნევის რეგულატორები, რომელთა საშუალებით, თბილისის მასშტაბით, სასმელი წყლის ნაკადებისა და
+                                წყლის წნევის რეგულირება ხდება.
+                            </p>
+                        </div>
+                    </div>
+
+                    <img src="../../assets/images/about/wkalmomarageba-1.png">
+                </div>
+
+                <div class="flex-1">
+                    <div class="innerpage-text-wrapper">
+                        <div class="innerpage-text-container">
+                            <p class="text-primary">სასმელი წყალი ყოველდღიური მოხმარების სასიცოცხლო მნიშვნელობის
+                                პროდუქტია,
+                                რომლის შექმნა-დამუშავება და მომხმარებლამდე მიწოდება კომპლექსური პროცესია. 
+                            </p>
+                            <p class="text-primary">
+                                დედაქალაქის წყალმომარაგება ოთხ ძირითად საფეხურს გადის:
+                                წყალაღება, წყლის ხარისხის სტანდარტამდე დაყვანა, წყლის ტრანსპორტირება, მომხმარებლებზე
+                                განაწილება. 
+                            </p>
+
+                            <p class="text-primary">
+                                არსებობს წყალმომარაგების ორი ტიპის წყარო - მიწისქვეშა და ზედაპირული. ნედლი წყლის
+                                ხარისხის
+                                გამო პრიორიტეტულია მიწისქვეშა წყალაღება.თბილისის წყალმომარაგების სისტემაში ორივე ტიპის
+                                წყალაღება გამოიყენება. მიწისქვეშა წყლების მოპოვება ხდება მდინარე არაგვის ხეობაში, ხოლო
+                                ზედაპირული წყალაღება ხორციელდება მდინარე არაგვიდან, მათ შორის ჟინვალის წყალსაცავიდან და
+                                ნაწილობრივ თბილისის ზღვიდან, ღრმაღელესა და სამგორის სათავე ნაგებობების საშუალებით.
+                            </p>
+
+                            <p class="text-primary">
+                                წყლის ხარისხის სტანდარტამდე დაყვანის შემდეგ ხდება მისი ტრასპორტირება და დაგროვება
+                                სარეგულაციო რეზერვუარებში. დედაქალაქის ტერიტორიაზე განთავსებულია 300 000 მ2 ტევადობის
+                                რეზერვუარები, მძლავრი სატუმბო სადგურები, ადგილობრივი წნევის მარეგულირებელი სადგურები და
+                                წნევის რეგულატორები, რომელთა საშუალებით, თბილისის მასშტაბით, სასმელი წყლის ნაკადებისა და
+                                წყლის წნევის რეგულირება ხდება.
+                            </p>
+                        </div>
+                    </div>
+
+                    <img src="../../assets/images/about/wkalmomarageba-2.png">
+                </div>
+            </div>
+            <div id="content5" class="content" style="display: none;">
+                <div class="innerpage-text-wrapper">
+                    <div class="heading-secondary">სოციალური პასუხისმგებლობა</div>
+                    <div class="innerpage-text-container">
+                        <p class="text-primary">უპირველესი სოციალური პასუხისმგებლობა, რომელიც ჯორჯიან უოთერ ენდ ფაუერის
+                            ძირითად საქმიანობას უკავშირდება, თბილისისა და ქალაქ მცხეთის მოსახლეობის, სახელმწიფო
+                            დაწესებულებების, სამრეწველო და კომერციული ობიექტების მაღალი ხარისხის სასმელი წყლით
+                            უზრუნველყოფა და მათი სტაბილური წყალმომარაგებაა.F
+                        </p>
+                    </div>
+                </div>
+                <img src="../../assets/images/about/socialuri.png">
+            </div>
+            <div id="content6" class="content" style="display: none;">
+                <div class="innerpage-text-wrapper">
+                    <h2 class="heading-secondary">ტარიფი</h2>
+                    <div class="innerpage-text-container">
+                        <p class="text-primary">წყალმომარაგებისა და წყალარინების მომსახურებაზე დაწესებულმა ტარიფმა 
+                            უნდა უზრუნველყოს არა მხოლოდ წყლის ხარისხი და მომხმარებლებისთვის მომსახურების გაწევა,
+                             არამედ სხვადასხვა ტიპის სარეაბილიტაციო, საპროფილაქტიკო და გადაუდებელი სამუშაოების ჩატარებაც. 
+                             2008 წლიდან, წყალმომარაგებისა და წყალარინების ტარიფების დადგენა და მათში ნებისმიერი ცვლილების 
+                             შეტანა საქართველოს 
+                            ენერგეტიკისა და წყალმომარაგების მარეგულირებელი ეროვნული კომისიის (სემეკ) კომპეტენციაა.
+                        </p>
+                    </div>
+                    <div class="tarifs-images">
+                        <img src="../../assets/images/about/tarifs.png">
+                        <img src="../../assets/images/about/tarifs.png">
+                        <img src="../../assets/images/about/tarifs.png">
+                    </div>    
+                    <h2 class="blue heading-secondary">თბილისისა და ქალაქ მცხეთის წყალმომარაგების მომსახურების ტარიფები</h2>
+                    <p class="text-primary"> წყალმომარაგების აღნიშნული ტარიფები საქართველოს ენერგეტიკისა და წყალმომარაგების მარეგულირებელმა ეროვნულმა 
+                        კომისიამ (სემეკ) 2023 წლის 28 დეკემბრის N78 დადგენილებით შპს „ჯორჯიან უოთერ ენდ ფაუერის“ მომხმარებლებისთვის დაადგინა. ტარიფები ამოქმედდა 2024 წლის 1 იანვრიდან. 
+                        2020 წლის 1 დეკემბრიდან კომპანიების ,,მცხეთის წყლის“ ,,ჯორჯიან უოთერ ენდ ფაუერთან“ გაერთიანების შედეგად, ქალაქ მცხეთის საყოფაცხოვრებო და 
+                        არასაყოფაცხოვრებო მომხმარებლებს ,,ჯორჯიან უოთერ ენდ ფაუერი” საქართველოს ენერგეტიკისა და წყალმომარაგების 
+                        მარეგულირებელი ეროვნული კომისიის მიერ დადგენილი ტარიფებით მოემსახურება  (N78 დადგენილება, 2023 წელი, 28 დეკემბერი). </p>
+                </div>
+                
+          
+                <div class="innerpage-text-wrapper">
+                    <h2 class="heading-secondary">ტარიფი</h2>
+                    <div class="innerpage-text-container">
+                        <p class="text-primary">წყალმომარაგებისა და წყალარინების მომსახურებაზე დაწესებულმა ტარიფმა 
+                            უნდა უზრუნველყოს არა მხოლოდ წყლის ხარისხი და მომხმარებლებისთვის მომსახურების გაწევა,
+                             არამედ სხვადასხვა ტიპის სარეაბილიტაციო, საპროფილაქტიკო და გადაუდებელი სამუშაოების ჩატარებაც. 
+                             2008 წლიდან, წყალმომარაგებისა და წყალარინების ტარიფების დადგენა და მათში ნებისმიერი ცვლილების 
+                             შეტანა საქართველოს 
+                            ენერგეტიკისა და წყალმომარაგების მარეგულირებელი ეროვნული კომისიის (სემეკ) კომპეტენციაა.
+                        </p>
+                    </div>
+                    <div class="tarifs-images">
+                        <img src="../../assets/images/about/tarifs.png">
+                        <img src="../../assets/images/about/tarifs.png">
+                        <img src="../../assets/images/about/tarifs.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+        <footer class="container space-between">
+            <div class="footer-column footer-adress">
+                <h2 class="footer-adress-heading">მისამართები</h2>
+                <ul>
+                    <li><a href="#">მთაწმინდის რაიონი -  მედია (მზია) ჯუღელის ქუჩა N10</a></li>
+                    <li><a href="#">ისნის რაიონი - შუამთის ქ. N10ბ</a></li>
+                    <li><a href="#">გლდანის რაიონი - აკაკი ვასაძის ქ. N12</a></li>
+                    <li><a href="#">რუსთავი - წმინდა ნინოს ქ. N15</a></li>
+                    <li><a href="#">მცხეთა - დავით აღმაშენებლის ქ. N27</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li class="first-f-item"><a href="#">ჩვენს შესახებ</a></li>
+                    <li><a href="#">წესები და პირობები</a></li>
+                    <li><a href="#" class="desktop-faq">ხშირად დასმული კითხვები</a></li>
+                    <li><a href="#">მისამართები</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contacts">
+                <ul>
+                    <li class="footer-contact-item first-f-item"><img src="../../assets/images/phone-icon.png" alt="phone"> <a href="tel: 32 222 25 25">თბილისი - <span>32 222 25 25</span></a></li>
+                    <li class="footer-contact-item"><img src="../../assets/images/phone-icon.png" alt="phone"> <a href="tel: 32 293 36 71">რუსთავი - <span> 32 293 36 71</span></a></li>
+                    <li class="footer-contact-item"><img src="../../assets/images/mail-icon.png" alt="mail"><a href="mailto:online@gwp.ge">online@gwp.ge</a></li>
+                </ul>
+            </div>
+            
+            <li class="mobile-faq"><a href="#">ხშირად დასმული კითხვები</a></li>
+
+            <div class="footer-column footer-last-row">
+                <div class="footer-socials">
+                    <a href="#"><img src="../../assets/images/footer-social-img-fb.png" alt="facebook"></a>
+                    <a href="#"><img src="../../assets/images/footer-social-img-fb.png" alt="facebook"></a>
+                    <a href="#"><img src="../../assets/images/footer-social-img-linkedin.png" alt="instagram"></a>
+                    <a href="#"><img src="../../assets/images/footer-social-img-you.png" alt="twitter"></a>
+                </div>
+                <div class="footer-logos align-center">
+                   <img src="../../assets/images/footer-logo-gvp.png" alt="footer-logo-gvp">
+                   <img src="../../assets/images/footer-logo-aqualia.png" alt="footer-logo-aqualia">
+                </div>
+            </div>
+        </footer>
+   </div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/about.js"></script>
+    <script src="../../assets/js/scripts.js"></script>
+</body>
+
+</html>

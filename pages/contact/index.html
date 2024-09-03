@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/contact.css">
+</head>
+
+<body>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img id="closePopup" class="close-button"  src="../../assets/images/icons/close.png"/>
+            <div class="popup-top">
+                <p class="heading-secondary">შეიყვანეთ SMS კოდი</h2>
+                <p class="little-text">შეტყობინება გამოგზვნილია ნომერზე: <span
+                        class="little-text b"> +995 555 ****23 </span></p>
+                </p>
+            </div>
+            <div class="code-input-container">
+                <input type="password" maxlength="1" class="code-input" />
+                <input type="password" maxlength="1" class="code-input" />
+                <input type="password" maxlength="1" class="code-input" />
+                <input type="password" maxlength="1" class="code-input" />
+            </div>
+            <div class="popup-buttons">
+                <a class="text-link">ახალი SMS</a>
+                <button class="btn-primary">დადასტურება</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <header class="container space-between">
+        <div class="header-left flex">
+            <a class="logo-link" href="/">
+                <img src="../../assets/images/GWP-LOGO.png" alt="Logo">
+            </a>
+            <nav class="flex">   <!-- menu item with active class color -->
+                <li><a class="text menu-item" href="./pages/about-us/">ჩვენ შესახებ</a></li> 
+                <li class="dropdown-item">
+                    <a class="text" href="/pages/services/index.html">სერვისები</a>
+                    <ul class="dropdown-items">
+                        <li><a href="#">სერვისი 1</a></li>
+                        <li><a href="#">სერვისი 2 </a></li>
+                        <li><a href="#">სერვისი 3</a></li>
+                    </ul>
+                </li>
+                <li><a class="text menu-item" href="pages/NEWS/index.html">სიახლეები</a></li>
+                <li><a class="text menu-item" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text menu-item" href="./pages/contact/">კონტაქტი</a></li>
+            </nav>
+        </div>
+        <div class="header-right align-center">
+            <div class="header-search">
+                <input type="text" placeholder="ძიება">
+                <img src="../../assets/images/search-icon.png" alt="search icon">
+            </div>
+            <div class="header-lang">
+                <div class="active-lang">
+                    <img class="lang-globe" src="../../assets/images/globe-lang.png" alt="flag icon">
+                    <span>ENG</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    </li>
+                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
+                                alt="flag icon">ENG</a></li>
+                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-primary login-btn"><a href="/pages/cabinet/index.html">ჩემი კაბინეტი</a></button>
+        </div>
+    </header>
+
+    <!-- mobile header  -->
+    <nav class="mobile-menu-container">
+        <div class="mobile-head">
+            <div class="menu-toggle">
+                <img src="../../assets/images/icons/menu-burger.png" alt="Menu Toggle" id="menuToggle">
+            </div>
+            <div class="logo-mobile">
+                <img src="../../assets/images/GWP-LOGO.png" alt="Logo">
+            </div>
+            <div class="header-lang">
+                <div class="active-lang">
+                    <img class="lang-globe" src="../../assets/images/globe-lang.png" alt="flag icon">
+                    <span>ENG</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    </li>
+                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
+                                alt="flag icon">ENG</a></li>
+                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="space-between">
+                <h4 class="mobile-menu-heading">მენიუ</h4>
+                <div class="menu-close">
+                    <img src="../../assets/images/icons/close-burger.png" alt="Close Menu" id="menuClose">
+                </div>
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="ძიება">
+                <img src="../../assets/images/search-icon.png" alt="search icon">
+            </div>
+            <ul>
+                <li><a class="text-primary menu-item" href="#">ჩვენ შესახებ</a></li>
+                <li><a class="text-primary menu-item" href="#">ჩემი კაბინეტი</a></li>
+                <li><a class="text-primary menu-item" href="#">სიახლეები</a></li>
+                <li><a class="text-primary menu-item" href="#">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text-primary menu-item" href="#">კონტაქტი</a></li>
+            </ul>
+            <a href="#" class="btn-primary mobile-cabinets-btn">ჩემი კაბინეტი</a>
+        </div>
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </nav>
+    <div class="header-line"></div>
+    <!-- end header  -->
+
+
+    <div class="container contact">
+        <div class="contact-info">
+            <div class="contact-left">
+                <div class="addresses">
+                    <div class="misamartebi">
+                        <p class="heading-secondary">მისამართები</p>
+                        <p class="text"> სამუშაო საათები, ორშაბათი-პარასკევი: 09:00 - 18:00</p>
+                    </div>
+
+                    <p class="little-text">მთაწმინდის რაიონი - მედია (მზია) ჯუღელის ქუჩა N10</p>
+                    <p class="little-text">ისნის რაიონი - შუამთის ქ. N10ბ</p>
+                    <p class="little-text">გლდანის რაიონი - აკაკი ვასაძის ქ. N12</p>
+                    <p class="little-text">რუსთავი - წმინდა ნინოს ქ. N15</p>
+                    <p class="little-text">მცხეთა - დავით აღმაშენებლის ქ. N27</p>
+                </div>
+
+                <div class="contact-us">
+                    <p class="heading-secondary">დაგვიკავშირდით</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item"><img src="../../assets/images/icons/phone.png"> <a
+                                href="callto:+9950322222525">32 222 25 25</a></div>
+                        <div class="contact-item"><img src="../../assets/images/icons/message.png"> <a
+                                href="mailto:online@gwp.ge">online@gwp.ge</a></div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <p class="heading-secondary">მოგვწერე</p>
+                <div class="form-row">
+                    <div class="form-item"> <label class="little-text">მობილურის ნომერი</label> <input type="text"
+                            class="contact-input" />
+                    </div>
+                    <div class="form-item"> <label class="little-text">სახელი</label> <input type="text"
+                            class="contact-input" /> </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label class="little-text">ელ-ფოსტა</label>
+                        <input type="mail" class="contact-input" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label class="little-text">შეტყობინება</label>
+                        <textarea class="contact-input textarea"></textarea>
+                    </div>
+                </div>
+                <button type="button"  onclick="openPopup()" class="send-form">შეტყობინების გაგზავნა</button>
+            </form>
+        </div>
+
+        <div class="contact-map">
+            <p class="heading-secondary">გვიპოვე რუკაზე</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26727.164067533286!2d44.8221526631529!3d41.755042705537065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446d19dc716bdd%3A0xe16eed433b47314f!2sGWP%20Training%20Center!5e0!3m2!1sen!2sge!4v1724654537473!5m2!1sen!2sge"
+                width="1275" height="377" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+        <footer class="container space-between">
+            <div class="footer-column footer-adress">
+                <h2 class="footer-adress-heading">მისამართები</h2>
+                <ul>
+                    <li><a href="#">მთაწმინდის რაიონი -  მედია (მზია) ჯუღელის ქუჩა N10</a></li>
+                    <li><a href="#">ისნის რაიონი - შუამთის ქ. N10ბ</a></li>
+                    <li><a href="#">გლდანის რაიონი - აკაკი ვასაძის ქ. N12</a></li>
+                    <li><a href="#">რუსთავი - წმინდა ნინოს ქ. N15</a></li>
+                    <li><a href="#">მცხეთა - დავით აღმაშენებლის ქ. N27</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li class="first-f-item"><a href="#">ჩვენს შესახებ</a></li>
+                    <li><a href="#">წესები და პირობები</a></li>
+                    <li><a href="#" class="desktop-faq">ხშირად დასმული კითხვები</a></li>
+                    <li><a href="#">მისამართები</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contacts">
+                <ul>
+                    <li class="footer-contact-item first-f-item"><img src="../../assets/images/phone-icon.png" alt="phone"> <a href="tel: 32 222 25 25">თბილისი - <span>32 222 25 25</span></a></li>
+                    <li class="footer-contact-item"><img src="../../assets/images/phone-icon.png" alt="phone"> <a href="tel: 32 293 36 71">რუსთავი - <span> 32 293 36 71</span></a></li>
+                    <li class="footer-contact-item"><img src="../../assets/images/mail-icon.png" alt="mail"><a href="mailto:online@gwp.ge">online@gwp.ge</a></li>
+                </ul>
+            </div>
+            
+            <li class="mobile-faq"><a href="#">ხშირად დასმული კითხვები</a></li>
+
+            <div class="footer-column footer-last-row">
+                <div class="footer-socials">
+                    <a href="#"><img src="../../assets/images/footer-social-img-fb.png" alt="facebook"></a>
+                    <a href="#"><img src="../../assets/images/footer-social-img-fb.png" alt="facebook"></a>
+                    <a href="#"><img src="../../assets/images/footer-social-img-linkedin.png" alt="instagram"></a>
+                    <a href="#"><img src="../../assets/images/footer-social-img-you.png" alt="twitter"></a>
+                </div>
+                <div class="footer-logos align-center">
+                   <img src="../../assets/images/footer-logo-gvp.png" alt="footer-logo-gvp">
+                   <img src="../../assets/images/footer-logo-aqualia.png" alt="footer-logo-aqualia">
+                </div>
+            </div>
+        </footer>
+   </div>
+
+    <script src="../../assets/js/contact.js"></script>
+    <script src="../../assets/js/scripts.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

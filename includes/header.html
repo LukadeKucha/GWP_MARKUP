@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWP</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+</head>
+<body>
+    <header class="container space-between">
+        <div class="header-left flex">
+            <a class="logo-link" href="/">
+                <img src="../assets/images/GWP-LOGO.png" alt="Logo">
+            </a>
+            <nav class="flex">   <!-- menu item with active class color -->
+                <li><a class="text menu-item" href="./pages/about-us/">ჩვენ შესახებ</a></li> 
+                <li class="dropdown-item">
+                    <a class="text" href="/pages/services/index.html">სერვისები</a>
+                    <ul class="dropdown-items">
+                        <li><a href="#">სერვისი 1</a></li>
+                        <li><a href="#">სერვისი 2 </a></li>
+                        <li><a href="#">სერვისი 3</a></li>
+                    </ul>
+                </li>
+                <li><a class="text menu-item" href="pages/NEWS/index.html">სიახლეები</a></li>
+                <li><a class="text menu-item" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text menu-item" href="./pages/contact/">კონტაქტი</a></li>
+            </nav>
+        </div>
+        <div class="header-right align-center">
+            <div class="header-search">
+                <input type="text" placeholder="ძიება">
+                <img src="../assets/images/search-icon.png" alt="search icon">
+            </div>
+            <div class="header-lang">
+                <div class="active-lang">
+                    <img class="lang-globe" src="../assets/images/globe-lang.png" alt="flag icon">
+                    <span>ENG</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li><a href="#"><img class="lang-icon" src="../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    </li>
+                    <li class="active"><a href="#"><img class="lang-icon" src="../assets/images/flag-eng.png"
+                                alt="flag icon">ENG</a></li>
+                    <li><a href="#"><img class="lang-icon" src="../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-primary login-btn"><a href="/pages/cabinet/index.html">ჩემი კაბინეტი</a></button>
+        </div>
+    </header>
+
+    <!-- mobile header  -->
+    <nav class="mobile-menu-container">
+        <div class="mobile-head">
+            <div class="menu-toggle">
+                <img src="../assets/images/icons/menu-burger.png" alt="Menu Toggle" id="menuToggle">
+            </div>
+            <div class="logo-mobile">
+                <img src="../assets/images/GWP-LOGO.png" alt="Logo">
+            </div>
+            <div class="header-lang">
+                <div class="active-lang">
+                    <img class="lang-globe" src="../assets/images/globe-lang.png" alt="flag icon">
+                    <span>ENG</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li><a href="#"><img class="lang-icon" src="../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    </li>
+                    <li class="active"><a href="#"><img class="lang-icon" src="../assets/images/flag-eng.png"
+                                alt="flag icon">ENG</a></li>
+                    <li><a href="#"><img class="lang-icon" src="../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="space-between">
+                <h4 class="mobile-menu-heading">მენიუ</h4>
+                <div class="menu-close">
+                    <img src="../assets/images/icons/close-burger.png" alt="Close Menu" id="menuClose">
+                </div>
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="ძიება">
+                <img src="../assets/images/search-icon.png" alt="search icon">
+            </div>
+            <ul>
+                <li><a class="text-primary menu-item" href="#">ჩვენ შესახებ</a></li>
+                <li><a class="text-primary menu-item" href="#">ჩემი კაბინეტი</a></li>
+                <li><a class="text-primary menu-item" href="#">სიახლეები</a></li>
+                <li><a class="text-primary menu-item" href="#">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text-primary menu-item" href="#">კონტაქტი</a></li>
+            </ul>
+            <a href="#" class="btn-primary mobile-cabinets-btn">ჩემი კაბინეტი</a>
+        </div>
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </nav>
+    <div class="header-line"></div>
+    <!-- end header  -->
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
