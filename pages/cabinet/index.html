@@ -17,8 +17,9 @@
             <a class="logo-link" href="/">
                 <img src="../../assets/images/GWP-LOGO.png" alt="Logo">
             </a>
-            <nav class="flex">   <!-- menu item with active class color -->
-                <li><a class="text menu-item" href="./pages/about-us/">ჩვენ შესახებ</a></li> 
+            <nav class="flex">
+                <!-- menu item with active class color -->
+                <li><a class="text" href="./pages/about-us/">ჩვენ შესახებ</a></li>
                 <li class="dropdown-item">
                     <a class="text" href="/pages/services/index.html">სერვისები</a>
                     <ul class="dropdown-items">
@@ -27,9 +28,9 @@
                         <li><a href="#">სერვისი 3</a></li>
                     </ul>
                 </li>
-                <li><a class="text menu-item" href="pages/NEWS/index.html">სიახლეები</a></li>
-                <li><a class="text menu-item" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
-                <li><a class="text menu-item" href="./pages/contact/">კონტაქტი</a></li>
+                <li><a class="text" href="pages/NEWS/index.html">სიახლეები</a></li>
+                <li><a class="text" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text" href="./pages/contact/">კონტაქტი</a></li>
             </nav>
         </div>
         <div class="header-right align-center">
@@ -43,11 +44,14 @@
                     <span>ENG</span>
                 </div>
                 <ul class="lang-dropdown">
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
                     </li>
-                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
-                                alt="flag icon">ENG</a></li>
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    <li class="active">
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png" alt="flag icon">ENG</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
                     </li>
                 </ul>
             </div>
@@ -70,11 +74,14 @@
                     <span>ENG</span>
                 </div>
                 <ul class="lang-dropdown">
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
                     </li>
-                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
-                                alt="flag icon">ENG</a></li>
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    <li class="active">
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png" alt="flag icon">ENG</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
                     </li>
                 </ul>
             </div>
@@ -111,7 +118,7 @@
     <!-- message popup -->
     <div id="popup-message" class="popup">
         <div class="popup-content">
-            <img id="closePopup" class="close-button" src="../../assets/images/icons/close.png" />
+            <img id="closePopupMsg" class="close-button" src="../../assets/images/icons/close.png" />
             <div class="popup-top">
                 <p class="heading-secondary">შეიყვანეთ SMS კოდი</h2>
                     <p class="little-text">შეტყობინება გამოგზვნილია ნომერზე: <span class="little-text b"> +995 555 ****23
@@ -135,7 +142,7 @@
 
     <div id="popup-row" class="popup">
         <div class="popup-content">
-            <img id="closePopup" class="close-button" src="../../assets/images/icons/close.png" />
+            <img id="closePopupRow" class="close-button" src="../../assets/images/icons/close.png" />
             <div class="popup-top">
                 <p class="heading-secondary">ახალი აბონენტის დამატება</p>
             </div>
@@ -228,7 +235,7 @@
 
     <div id="popup" class="popup">
         <div class="popup-content">
-            <img id="closePopup" class="close-button" src="../../assets/images/icons/close.png" />
+            <img id="closePopupSms" class="close-button" src="../../assets/images/icons/close.png" />
             <div class="popup-top">
                 <p class="heading-secondary">შეიყვანეთ SMS კოდი</h2>
                     <p class="little-text">შეტყობინება გამოგზვნილია ნომერზე: <span class="little-text b"> +995 555 ****23
@@ -252,7 +259,7 @@
 
     <div id="popup-problem" class="popup">
         <div class="popup-content">
-            <img id="closePopup" class="close-button" src="../../assets/images/icons/close.png" />
+            <img id="closePopupProblem" class="close-button" src="../../assets/images/icons/close.png" />
             <div class="popup-top">
                 <p class="heading-secondary">პრობლემის დაფიქსირება</p>
             </div>
@@ -340,10 +347,8 @@
                 <li>
                     <a href="#" id="menu-1" class="menu-item active">
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.1336 7.49083L8.8836 1.24083C8.6492 1.00658 8.33139 0.875 8.00001 0.875C7.66863 0.875 7.35081 1.00658 7.11641 1.24083L0.866414 7.49083C0.749777 7.6066 0.657319 7.7444 0.594417 7.89623C0.531515 8.04805 0.499423 8.21087 0.500008 8.3752V15.8752C0.500008 16.041 0.565856 16.1999 0.683066 16.3171C0.800276 16.4344 0.959247 16.5002 1.12501 16.5002H6.12501C6.29077 16.5002 6.44974 16.4344 6.56695 16.3171C6.68416 16.1999 6.75001 16.041 6.75001 15.8752V11.5002H9.25001V15.8752C9.25001 16.041 9.31586 16.1999 9.43307 16.3171C9.55028 16.4344 9.70925 16.5002 9.87501 16.5002H14.875C15.0408 16.5002 15.1997 16.4344 15.317 16.3171C15.4342 16.1999 15.5 16.041 15.5 15.8752V8.3752C15.5006 8.21087 15.4685 8.04805 15.4056 7.89623C15.3427 7.7444 15.2502 7.6066 15.1336 7.49083ZM14.25 15.2502H10.5V10.8752C10.5 10.7094 10.4342 10.5505 10.3169 10.4333C10.1997 10.3161 10.0408 10.2502 9.87501 10.2502H6.12501C5.95925 10.2502 5.80028 10.3161 5.68307 10.4333C5.56586 10.5505 5.50001 10.7094 5.50001 10.8752V15.2502H1.75001V8.3752L8.00001 2.1252L14.25 8.3752V15.2502Z"
-                                fill="#0576BE" />
-                        </svg> მთავარი
+                            <path d="M15.1336 7.49083L8.8836 1.24083C8.6492 1.00658 8.33139 0.875 8.00001 0.875C7.66863 0.875 7.35081 1.00658 7.11641 1.24083L0.866414 7.49083C0.749777 7.6066 0.657319 7.7444 0.594417 7.89623C0.531515 8.04805 0.499423 8.21086 0.500008 8.3752V15.8752C0.500008 16.041 0.565856 16.1999 0.683066 16.3171C0.800276 16.4344 0.959247 16.5002 1.12501 16.5002H6.12501C6.29077 16.5002 6.44974 16.4344 6.56695 16.3171C6.68416 16.1999 6.75001 16.041 6.75001 15.8752V11.5002H9.25001V15.8752C9.25001 16.041 9.31586 16.1999 9.43307 16.3171C9.55028 16.4344 9.70925 16.5002 9.87501 16.5002H14.875C15.0408 16.5002 15.1997 16.4344 15.317 16.3171C15.4342 16.1999 15.5 16.041 15.5 15.8752V8.3752C15.5006 8.21086 15.4685 8.04805 15.4056 7.89623C15.3427 7.7444 15.2502 7.6066 15.1336 7.49083ZM14.25 15.2502H10.5V10.8752C10.5 10.7094 10.4342 10.5505 10.3169 10.4333C10.1997 10.316 10.0408 10.2502 9.87501 10.2502H6.12501C5.95925 10.2502 5.80028 10.316 5.68307 10.4333C5.56586 10.5505 5.50001 10.7094 5.50001 10.8752V15.2502H1.75001V8.3752L8.00001 2.1252L14.25 8.3752V15.2502Z" fill="#696969"/>
+                            </svg> მთავარი
                     </a>
                 </li>
                 <li>
@@ -804,7 +809,7 @@
                                 <p class="place-title" style="line-height: 18px; font-weight: 600;">sandroamashukeli</p>
                             </div>
                         </div>
-                        <button class="btn-primary" onclick="openDetailsPopup();">მონაცემების შესწორება</button>
+                        <button class="btn-primary" onclick="openDetailsPopup();"><img src="../../assets/images/icons/edit.png"> ჩემი მონაცემების განახლება</button>
                     </div>
                 </div>
             </div>
@@ -838,7 +843,7 @@
                     <li class="footer-contact-item"><img src="../../assets/images/mail-icon.png" alt="mail"><a href="mailto:online@gwp.ge">online@gwp.ge</a></li>
                 </ul>
             </div>
-            
+
             <li class="mobile-faq"><a href="#">ხშირად დასმული კითხვები</a></li>
 
             <div class="footer-column footer-last-row">
@@ -849,12 +854,12 @@
                     <a href="#"><img src="../../assets/images/footer-social-img-you.png" alt="twitter"></a>
                 </div>
                 <div class="footer-logos align-center">
-                   <img src="../../assets/images/footer-logo-gvp.png" alt="footer-logo-gvp">
-                   <img src="../../assets/images/footer-logo-aqualia.png" alt="footer-logo-aqualia">
+                    <img src="../../assets/images/footer-logo-gvp.png" alt="footer-logo-gvp">
+                    <img src="../../assets/images/footer-logo-aqualia.png" alt="footer-logo-aqualia">
                 </div>
             </div>
         </footer>
-   </div>
+    </div>
 
     <script src="../../assets/js/cabinet.js"></script>
     <script src="../../assets/js/scripts.js"></script>

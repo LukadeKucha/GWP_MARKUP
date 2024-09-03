@@ -21,6 +21,7 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
+
 /* managment */
 
 .managment-item {
@@ -32,6 +33,7 @@
 }
 
 .managment-name {
+    text-align: center;
     color: #000;
     font-family: FiraGO;
     font-size: 13px;
@@ -47,6 +49,7 @@
     font-family: Firago;
     line-height: 15px;
 }
+
 
 /* Mangment Popup */
 
@@ -70,12 +73,10 @@
     background-color: white;
     border-radius: 12px;
     max-width: 841px;
-
     width: 100%;
     position: relative;
     text-align: center;
 }
-
 
 .close-btn {
     position: absolute;
@@ -109,7 +110,6 @@
     transform: translateY(-50%);
 }
 
-
 .p-circle.r {
     position: absolute;
     top: 50%;
@@ -126,8 +126,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
 
 .managment-popup .topside {
     padding-bottom: 12px;
@@ -175,73 +173,81 @@
     flex-direction: row-reverse;
 }
 
-#content4 .flex1:nth-child(2)
-{
-    flex-direction: row-reverse;
+#content4 .flex-1:nth-child(2) {
+    flex-direction: row;
 }
-/* resp */
 
+#content6 {
+    max-width: 948px;
+}
+
+.tarifs-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* resp */
 
 #content6 {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 #content6 .innerpage-text-container {
     max-width: 1200px;
 }
- .blue {
-    color:#0576BE;
+
+.blue {
+    color: #0576BE;
 }
 
-
-@media screen and (max-width : 1024px) {
+@media screen and (max-width: 1024px) {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
-
     .managment-item {
         flex-direction: row;
     }
-
     .managment-item img {
         width: 74px;
     }
-
     .innerpage-container {
         padding: 16px;
     }
-
     #content1 {
         flex-direction: column-reverse;
     }
-
-    #content2{
+    #content2 {
         gap: 16px;
     }
-
     .container {
         margin: 0;
     }
-
     .managment-item {
         width: 100%;
         gap: 16px;
     }
-
+    .managment-name {
+        text-align: left;
+    }
     .managment-title {
         text-align: left;
     }
-
     #content3 {
         flex-direction: column-reverse;
     }
-
     .flex-1 {
         flex-direction: column-reverse;
+        gap: 12px;
     }
-
-    #content5{
+    #content4 .flex-1:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    #content5 {
         flex-direction: column-reverse;
         gap: 16px;
     }

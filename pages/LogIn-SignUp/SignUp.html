@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,16 @@
     <link rel="stylesheet" href="../../assets/css/contact.css">
     <title>რეგისტრაცია</title>
 </head>
+
 <body>
     <header class="container space-between">
         <div class="header-left flex">
             <a class="logo-link" href="/">
                 <img src="../../assets/images/GWP-LOGO.png" alt="Logo">
             </a>
-            <nav class="flex">   <!-- menu item with active class color -->
-                <li><a class="text menu-item" href="./pages/about-us/">ჩვენ შესახებ</a></li> 
+            <nav class="flex">
+                <!-- menu item with active class color -->
+                <li><a class="text" href="./pages/about-us/">ჩვენ შესახებ</a></li>
                 <li class="dropdown-item">
                     <a class="text" href="/pages/services/index.html">სერვისები</a>
                     <ul class="dropdown-items">
@@ -26,9 +29,9 @@
                         <li><a href="#">სერვისი 3</a></li>
                     </ul>
                 </li>
-                <li><a class="text menu-item" href="pages/NEWS/index.html">სიახლეები</a></li>
-                <li><a class="text menu-item" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
-                <li><a class="text menu-item" href="./pages/contact/">კონტაქტი</a></li>
+                <li><a class="text" href="pages/NEWS/index.html">სიახლეები</a></li>
+                <li><a class="text" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text" href="./pages/contact/">კონტაქტი</a></li>
             </nav>
         </div>
         <div class="header-right align-center">
@@ -42,11 +45,14 @@
                     <span>ENG</span>
                 </div>
                 <ul class="lang-dropdown">
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
                     </li>
-                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
-                                alt="flag icon">ENG</a></li>
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    <li class="active">
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png" alt="flag icon">ENG</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
                     </li>
                 </ul>
             </div>
@@ -69,11 +75,14 @@
                     <span>ENG</span>
                 </div>
                 <ul class="lang-dropdown">
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
                     </li>
-                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
-                                alt="flag icon">ENG</a></li>
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    <li class="active">
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png" alt="flag icon">ENG</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
                     </li>
                 </ul>
             </div>
@@ -155,7 +164,7 @@
             <div class="signup-bottom-form mt-24 ">
                 <div class="sign-up-chackboxs">
                     <div class="sign-up-chackbox ">
-                        <input type="checkbox" id="terms"> 
+                        <input type="checkbox" id="terms">
                         <label for="terms">ვეთანხმები <a href="#">წესებს და პირობებს</a> </label>
                     </div>
                     <div class="sign-up-chackbox">
@@ -163,20 +172,19 @@
                         <label for="privacy">კონფიდენციალობის პირობები/მონაცემთა დაცვა</label>
                     </div>
                 </div>
-                
-                <button disabled type="button" class="btn-primary"  onclick="openPopup()">რეგისტრაცია</button>
+
+                <button disabled type="button" class="btn-primary" onclick="openPopup()">რეგისტრაცია</button>
             </div>
-            
+
         </form>
     </div>
 
     <div id="popup" class="popup">
         <div class="popup-content">
-            <img id="closePopup" class="close-button"  src="../../assets/images/icons/close.png"/>
+            <img id="closePopup" class="close-button" src="../../assets/images/icons/close.png" />
             <div class="popup-top">
                 <p class="heading-secondary">შეიყვანეთ SMS კოდი</h2>
-                <p class="little-text">შეტყობინება გამოგზვნილია ნომერზე: <span
-                        class="little-text b"> +995 555 ****23 </span></p>
+                    <p class="little-text">შეტყობინება გამოგზვნილია ნომერზე: <span class="little-text b"> +995 555 ****23 </span></p>
                 </p>
             </div>
             <div class="code-input-container">
@@ -187,7 +195,7 @@
             </div>
             <div class="popup-buttons">
                 <a class="text-link">ახალი SMS</a>
-                <button  class="btn-primary">დადასტურება</button>
+                <button class="btn-primary">დადასტურება</button>
             </div>
         </div>
     </div>
@@ -219,7 +227,7 @@
                     <li class="footer-contact-item"><img src="../../assets/images/mail-icon.png" alt="mail"><a href="mailto:online@gwp.ge">online@gwp.ge</a></li>
                 </ul>
             </div>
-            
+
             <li class="mobile-faq"><a href="#">ხშირად დასმული კითხვები</a></li>
 
             <div class="footer-column footer-last-row">
@@ -230,40 +238,40 @@
                     <a href="#"><img src="../../assets/images/footer-social-img-you.png" alt="twitter"></a>
                 </div>
                 <div class="footer-logos align-center">
-                   <img src="../../assets/images/footer-logo-gvp.png" alt="footer-logo-gvp">
-                   <img src="../../assets/images/footer-logo-aqualia.png" alt="footer-logo-aqualia">
+                    <img src="../../assets/images/footer-logo-gvp.png" alt="footer-logo-gvp">
+                    <img src="../../assets/images/footer-logo-aqualia.png" alt="footer-logo-aqualia">
                 </div>
             </div>
         </footer>
-   </div>
+    </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('login-form');
-    const inputs = form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], input[type="password"]');
-    const checkboxes = form.querySelectorAll('input[type="checkbox"]');
-    const submitButton = form.querySelector('button[type="button"]');
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('login-form');
+            const inputs = form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], input[type="password"]');
+            const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+            const submitButton = form.querySelector('button[type="button"]');
 
-    function checkFormValidity() {
-        const allInputsFilled = Array.from(inputs).every(input => input.value.trim() !== '');
-        const allCheckboxesChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+            function checkFormValidity() {
+                const allInputsFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+                const allCheckboxesChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
 
-        if (allInputsFilled && allCheckboxesChecked) {
-            submitButton.disabled = false;
-        } else {
-            submitButton.disabled = true;
-        }
-    }
+                if (allInputsFilled && allCheckboxesChecked) {
+                    submitButton.disabled = false;
+                } else {
+                    submitButton.disabled = true;
+                }
+            }
 
-    inputs.forEach(input => input.addEventListener('input', checkFormValidity));
-    checkboxes.forEach(checkbox => checkbox.addEventListener('change', checkFormValidity));
-    checkFormValidity();
-});
-
-</script>
+            inputs.forEach(input => input.addEventListener('input', checkFormValidity));
+            checkboxes.forEach(checkbox => checkbox.addEventListener('change', checkFormValidity));
+            checkFormValidity();
+        });
+    </script>
 
 
     <script src="../../assets/js/contact.js"></script>
     <script src="../../assets/js/main.js"></script>
 </body>
+
 </html>

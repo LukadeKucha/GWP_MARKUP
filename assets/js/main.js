@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // active color current menu item 
-const currentPath = window.location.pathname;
-const menuItems = document.querySelectorAll('.menu-item');
+// const currentPath = window.location.pathname;
+// const menuItems = document.querySelectorAll('.menu-item');
 
-menuItems.forEach(item => {
-    const link = item.querySelector('a');
+// menuItems.forEach(item => {
+//     const link = item.querySelector('a');
 
-    if (link.getAttribute('href') === currentPath) {
-        item.classList.add('menu-active'); 
-    }
-});
+//     if (link.getAttribute('href') === currentPath) {
+//         item.classList.add('menu-active'); 
+//     }
+// });

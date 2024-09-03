@@ -17,7 +17,7 @@ function openRowPopup() {
 }
 
 const rowPopup = document.getElementById('popup-row');
-const closeRowPopup = document.getElementById('closePopup');
+const closeRowPopup = document.getElementById('closePopupRow');
 const submitBtn = document.getElementById('submitBtn');
 const abonentNumberInput = document.getElementById('abonentNumber');
 const addressInput = document.getElementById('address');
@@ -99,7 +99,7 @@ function openPopup() {
 }
 
 const popup = document.getElementById('popup');
-const closePopup = document.getElementById('closePopup');
+const closePopup = document.getElementById('closePopupSms');
 
 closePopup.addEventListener('click', function() {
     popup.style.display = 'none';
@@ -135,7 +135,7 @@ document.getElementById('upload').addEventListener('click', function() {
 
 });
 
-const closePopupProblem = document.getElementById('closePopup-p');
+const closePopupProblem = document.getElementById('closePopupProblem');
 const popupProblem = document.getElementById('popup-problem');
 
 closePopup.addEventListener('click', function() {
@@ -211,7 +211,7 @@ const messagesList = document.getElementById('messagesList');
 const messageDetails = document.getElementById('messageDetails');
 const selectAllCheckbox = document.getElementById('selectAll');
 const deleteSelectedButton = document.getElementById('deleteSelected');
-const closePopupButton = document.getElementById('closePopupMessage');
+const closePopupButton = document.getElementById('closePopupMsg');
 
 function renderMessages() {
     messagesList.innerHTML = '';

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../assets/css/header.css">
     <link rel="stylesheet" href="../../assets/css/home.css">
     <link rel="stylesheet" href="../../assets/css/news-pages.css">
-</head> 
+</head>
 
 <body>
     <header class="container space-between">
@@ -18,8 +18,9 @@
             <a class="logo-link" href="/">
                 <img src="../../assets/images/GWP-LOGO.png" alt="Logo">
             </a>
-            <nav class="flex">   <!-- menu item with active class color -->
-                <li><a class="text menu-item" href="./pages/about-us/">ჩვენ შესახებ</a></li> 
+            <nav class="flex">
+                <!-- menu item with active class color -->
+                <li><a class="text" href="./pages/about-us/">ჩვენ შესახებ</a></li>
                 <li class="dropdown-item">
                     <a class="text" href="/pages/services/index.html">სერვისები</a>
                     <ul class="dropdown-items">
@@ -28,9 +29,9 @@
                         <li><a href="#">სერვისი 3</a></li>
                     </ul>
                 </li>
-                <li><a class="text menu-item" href="pages/NEWS/index.html">სიახლეები</a></li>
-                <li><a class="text menu-item" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
-                <li><a class="text menu-item" href="./pages/contact/">კონტაქტი</a></li>
+                <li><a class="text" href="pages/NEWS/index.html">სიახლეები</a></li>
+                <li><a class="text" href="./pages/etika/">ეთიკა და პოლიტიკა</a></li>
+                <li><a class="text" href="./pages/contact/">კონტაქტი</a></li>
             </nav>
         </div>
         <div class="header-right align-center">
@@ -44,11 +45,14 @@
                     <span>ENG</span>
                 </div>
                 <ul class="lang-dropdown">
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
                     </li>
-                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
-                                alt="flag icon">ENG</a></li>
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    <li class="active">
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png" alt="flag icon">ENG</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
                     </li>
                 </ul>
             </div>
@@ -71,11 +75,14 @@
                     <span>ENG</span>
                 </div>
                 <ul class="lang-dropdown">
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-geo.png" alt="flag icon">GEO</a>
                     </li>
-                    <li class="active"><a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png"
-                                alt="flag icon">ENG</a></li>
-                    <li><a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
+                    <li class="active">
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-eng.png" alt="flag icon">ENG</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lang-icon" src="../../assets/images/flag-esp.png" alt="flag icon">ESP</a>
                     </li>
                 </ul>
             </div>
@@ -135,97 +142,86 @@
         </div>
         <!-- data-content shows relevant page content with id  -->
 
-        <div class="innerpage-container" >
+        <div class="innerpage-container">
             <div id="content1" class="pagination-content content active flex-container">
 
-         <!-- data-page is news pagination relevant page -->         
+                <!-- data-page is news pagination relevant page -->
                 <div data-page="1" class="home-news">
-                    <div class="home-news-cards">    
-                        <div class="home-news-card"> 
+                    <div class="home-news-cards">
+                        <div class="home-news-card">
                             <img src="../../assets/images/news/news.jpg" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯივიპი თბილისის წყალმომარაგებაში ევროპულ სტანდარტს ნერგავს</h4>
-                            <p class="home-news-text">დღეს, 22 ნოემბერს, ჯორჯიან უოთერ ენდ ფაუერმა თბილისში, ანდრონიკაშვილის ქუჩაზე, 
-                                პირველი მულტიფუნქციური საოპერაციო ცენტრი გახსნა.</p>
+                            <p class="home-news-text">დღეს, 22 ნოემბერს, ჯორჯიან უოთერ ენდ ფაუერმა თბილისში, ანდრონიკაშვილის ქუჩაზე, პირველი მულტიფუნქციური საოპერაციო ცენტრი გახსნა.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                         <div class="home-news-card">
                             <img src="../../assets/images/home-imgs/home-news.png" alt="">
                             <div class="news-date center">25.11.2024</div>
                             <h4 class="home-news-heading">ჯორჯიან უოთერ ენდ ფაუერის სპეციალური განცხადება</h4>
-                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის
-                                N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
+                            <p class="home-news-text">დღეს, 25 ოქტომბერს, ჯორჯიან უოთერ ენდ ფაუერი ნუცუბიძის მე-5 მიკრორაიონის N9ა კორპუსის მიმდებარედ წყალსადენის ქსელზე დაზიანების  აღსადგენად სამუშაოებს ატარებს.</p>
                         </div>
                     </div>
                 </div>
-                <div data-page="2" class="home-news">news content 2</div> 
+                <div data-page="2" class="home-news">news content 2</div>
                 <div data-page="3" class="home-news">news content 3</div>
                 <div data-page="4" class="home-news">news content 4</div>
                 <div data-page="5" class="home-news">news content 5</div>
-                <div data-page="6" class="home-news">news content 6</div> 
-                <div data-page="20" class="home-news">news content 20</div> 
+                <div data-page="6" class="home-news">news content 6</div>
+                <div data-page="20" class="home-news">news content 20</div>
 
                 <div id="pagination-numbers">
                     <span class="arrow left" id="prev">&lt;</span>
@@ -235,7 +231,7 @@
             </div>
             <!-- total pagination numbers is in news-pagination.js -->
             <!-- end first news (blog pagination) section   -->
-            
+
 
 
             <!-- planned-works -->
@@ -245,7 +241,7 @@
                     <button class="tab-button" data-target="city-content2">რუსთავი</button>
                     <button class="tab-button" data-target="city-content3">მცხეთა</button>
                 </div>
-            
+
                 <div class="city-content1">
                     <div class="form-group choose-region mt-24">
                         <label>აირჩიეთ რაიონი</label>
@@ -284,7 +280,7 @@
                     <div data-region="3">option 3</div>
                 </div>
                 <div class="city-content2">
-                     <div class="form-group choose-region mt-24">
+                    <div class="form-group choose-region mt-24">
                         <label>აირჩიეთ რაიონი</label>
                         <select>
                             <option value="1">რუსთავი 1</option>
@@ -321,7 +317,7 @@
                     <button class="tab-button" data-target="city-content2">რუსთავი</button>
                     <button class="tab-button" data-target="city-content3">მცხეთა</button>
                 </div>
-            
+
                 <div class="city-content1">
                     <div class="form-group choose-region mt-24">
                         <label>აირჩიეთ რაიონი</label>
@@ -367,7 +363,7 @@
                     <div data-region="3">option 3</div>
                 </div>
                 <div class="city-content2">
-                     <div class="form-group choose-region mt-24">
+                    <div class="form-group choose-region mt-24">
                         <label>აირჩიეთ რაიონი</label>
                         <select>
                             <option value="1">რუსთავი 1</option>
@@ -393,57 +389,58 @@
                     <div data-region="3">option 3</div>
                 </div>
             </div>
-           <!-- end current works section -->
+            <!-- end current works section -->
 
             <!-- start tenders  section -->
-            <div id="content4" class="content"> 
-               <div class="tenders">
-                <p class="text tenders-head-text">ნებისმიერ დაინტერესებულ პირს შესაძლებლობა აქვს მონაწილეობა მიიღოს კომპანია ჯორჯიან <br> უოთერ ენდ ფაუერის მიერ გამოცხადებულ ტენდერში.
-                    ტენდერების შესახებ ინფორმაცია ხელიმისაწვდომია კომპანიის ვებგვერდზე და <a class="text-link" href="www.tenders.ge" target="_blank">www.tenders.ge</a>-ზე
-                </p>
-                <h5 class="mt-24 tenders-heading">შიდა შესყიდვის ტენდერები:</h5>
-                <div class="tenders-cards">
-                    <div class="tenders-card">
-                        <div class="align-center">
-                            <img src="../../assets/images/icons/Car.svg" alt="">
-                            <h4 class="tender-title">ტენდერი ავტომობილების შესყიდვაზე</h4>
+            <div id="content4" class="content">
+                <div class="tenders">
+                    <p class="text tenders-head-text">ნებისმიერ დაინტერესებულ პირს შესაძლებლობა აქვს მონაწილეობა მიიღოს კომპანია ჯორჯიან <br> უოთერ ენდ ფაუერის მიერ გამოცხადებულ ტენდერში. ტენდერების შესახებ ინფორმაცია ხელიმისაწვდომია კომპანიის ვებგვერდზე და <a class="text-link" href="www.tenders.ge"
+                            target="_blank">www.tenders.ge</a>-ზე
+                    </p>
+                    <h5 class="mt-24 tenders-heading">შიდა შესყიდვის ტენდერები:</h5>
+                    <div class="tenders-cards">
+                        <div class="tenders-card">
+                            <div class="align-center">
+                                <img src="../../assets/images/icons/Car.svg" alt="">
+                                <h4 class="tender-title">ტენდერი ავტომობილების შესყიდვაზე</h4>
+                            </div>
+                            <div class="tender-card-info">
+                                <p><span>კატეგორია:</span> სპეც. ტექნიკის შესყიდვა</p>
+                                <p><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
+                            </div>
                         </div>
-                        <div class="tender-card-info">
-                            <p><span>კატეგორია:</span> სპეც. ტექნიკის შესყიდვა</p>
-                            <p><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
+                        <div class="tenders-card">
+                            <div class="align-center">
+                                <img src="../../assets/images/icons/Car.svg" alt="">
+                                <h4 class="tender-title">ტენდერი ავტომობილების შესყიდვაზე</h4>
+                            </div>
+                            <div class="tender-card-info">
+                                <p><span>კატეგორია:</span> სპეც. ტექნიკის შესყიდვა</p>
+                                <p><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tenders-card">
-                        <div class="align-center">
-                            <img src="../../assets/images/icons/Car.svg" alt="">
-                            <h4 class="tender-title">ტენდერი ავტომობილების შესყიდვაზე</h4>
-                        </div>
-                        <div class="tender-card-info">
-                            <p><span>კატეგორია:</span> სპეც. ტექნიკის შესყიდვა</p>
-                            <p><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
-                        </div>
-                    </div>
-                    <div class="tenders-card">
-                        <div class="align-center">
-                            <img src="../../assets/images/icons/Car.svg" alt="">
-                            <h4 class="tender-title">ტენდერი ავტომობილების შესყიდვაზე</h4>
-                        </div>
-                        <div class="tender-card-info">
-                            <p><span>კატეგორია:</span> სპეც. ტექნიკის შესყიდვა</p>
-                            <p><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
+                        <div class="tenders-card">
+                            <div class="align-center">
+                                <img src="../../assets/images/icons/Car.svg" alt="">
+                                <h4 class="tender-title">ტენდერი ავტომობილების შესყიდვაზე</h4>
+                            </div>
+                            <div class="tender-card-info">
+                                <p><span>კატეგორია:</span> სპეც. ტექნიკის შესყიდვა</p>
+                                <p><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-               </div>
             </div>
             <!-- end tenders  section -->
 
 
             <!-- start documents section  -->
             <div id="content5" class="content">
-               <div class="documents">
+                <div class="documents">
                     <h2 class="documents-heading">მართვის სისტემის პოლიტიკა</h2>
-                    <p class="text">წყალმომარაგების შეზღუდვისა და აღდგენის შესახებ ინფორმაციას, ჯორჯიან უოთერ ენდ ფაუერი აბონენტებს წინასწარ, SMS-შეტყობინების სახით უგზავნის. დეტალური ინფორმაციის მოძიება შესაძლებელია კომპანიის ცხელი ხაზის - 2 93 11 11, ფეისბუქისა და ვებგვერდის მეშვეობით
+                    <p class="text">წყალმომარაგების შეზღუდვისა და აღდგენის შესახებ ინფორმაციას, ჯორჯიან უოთერ ენდ ფაუერი აბონენტებს წინასწარ, SMS-შეტყობინების სახით უგზავნის. დეტალური ინფორმაციის მოძიება შესაძლებელია კომპანიის ცხელი ხაზის - 2 93 11 11, ფეისბუქისა და
+                        ვებგვერდის მეშვეობით
                         <a href=" http://www.gwp.ge" class="text-link"> http://www.gwp.ge</a>
                     </p>
                     <div class="pdf-buttons mt-32">
@@ -460,26 +457,19 @@
                             <p class="text-link">საჩუქრების შესახებ პოლიტიკა</p>
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
-        <!-- End documents section  -->
+            <!-- End documents section  -->
 
 
             <div id="content6" class="content">
                 <div class="documents">
                     <p class="text">
-                        საქართველოს ზოგადი ადმინისტრაციული კოდექსის 57-ე მუხლის, საქართველოს ადმინისტრაციულ 
-                        სამართალდარღვევათა კოდექსის 268-ე მუხლის მე-9 პუნქტის და 273-ე მუხლის, საქართველოს ენერგეტიკისა
-                         და წყალმომარაგების მარეგულირებელი ეროვნული კომისიის 2010 წლის 12 აგვისტოს #14 დადგენილების <br> <br>
-                         მე-10 და მე-11 მუხლების თანახმად ჯივიპის მიერ ადმინისტრაციული სამართალდარღვევის საქმეებზე მიღებული
-                          დადგენილება მხარეს ფოსტის მეშვეობით ეგზავნება დადგენილების გამოტანიდან 3 სამუშაო დღის ვადაში.  იმ <br> <br>
-                          შემთხვევაში თუ დადგენილების ჩაბარება ადრესატისთვის სხვადასხვა მიზეზის გამო ვერ მოხერხდა 
-                          (დადგენილება ფოსტის მეშვეობით მხარესთან იგზავნება ორჯერ), მაშინ დადგენილება საჯაროდ განთავსდება
-                          კომპანიის ვებგვერდზე და ჩაბარებულად ჩაითვლება მისი საჯაროდ განთავსებიდან მე-3 დღეს.  საქართველოს <br> <br>
-                          ადმინისტრაციულ სამართალდარღვევათა კოდექსში აღნიშნული ცვლილება ძალაში შევიდა 2019 წლის 24 ოქტომბრიდან.  PDF -
-                           დოკუმენტის გახსნისას გთხოვთ პაროლის ველში მიუთითოთ ფიზიკური პირის შემთხვევაში პირადი ნომერი, იურიდიული პირის 
-                           შემთხვევაში საიდენტიფიკაციო ნომერი. 
-                        საიდენტიფიკაციო ნომრის არარსებობის შემთხვევაში მიუთითეთ დადგენილების ნომერი.
+                        საქართველოს ზოგადი ადმინისტრაციული კოდექსის 57-ე მუხლის, საქართველოს ადმინისტრაციულ სამართალდარღვევათა კოდექსის 268-ე მუხლის მე-9 პუნქტის და 273-ე მუხლის, საქართველოს ენერგეტიკისა და წყალმომარაგების მარეგულირებელი ეროვნული კომისიის 2010 წლის 12 აგვისტოს
+                        #14 დადგენილების <br> <br> მე-10 და მე-11 მუხლების თანახმად ჯივიპის მიერ ადმინისტრაციული სამართალდარღვევის საქმეებზე მიღებული დადგენილება მხარეს ფოსტის მეშვეობით ეგზავნება დადგენილების გამოტანიდან 3 სამუშაო
+                        დღის ვადაში. იმ <br> <br> შემთხვევაში თუ დადგენილების ჩაბარება ადრესატისთვის სხვადასხვა მიზეზის გამო ვერ მოხერხდა (დადგენილება ფოსტის მეშვეობით მხარესთან იგზავნება ორჯერ), მაშინ დადგენილება საჯაროდ განთავსდება კომპანიის ვებგვერდზე
+                        და ჩაბარებულად ჩაითვლება მისი საჯაროდ განთავსებიდან მე-3 დღეს. საქართველოს <br> <br> ადმინისტრაციულ სამართალდარღვევათა კოდექსში აღნიშნული ცვლილება ძალაში შევიდა 2019 წლის 24 ოქტომბრიდან. PDF - დოკუმენტის გახსნისას გთხოვთ პაროლის
+                        ველში მიუთითოთ ფიზიკური პირის შემთხვევაში პირადი ნომერი, იურიდიული პირის შემთხვევაში საიდენტიფიკაციო ნომერი. საიდენტიფიკაციო ნომრის არარსებობის შემთხვევაში მიუთითეთ დადგენილების ნომერი.
                     </p>
                     <div class="pdf-buttons mt-32">
                         <div class="btn-pdf"><img src="../../assets/images/icons/pdf.png">
@@ -504,7 +494,7 @@
                 </div>
             </div>
 
-      
+
 
             <!-- start career content  -->
             <div id="content7" class="content">
@@ -515,19 +505,23 @@
                             <h3>სასაწყობე მეურნეობის სამსახურში, საწყობის ოპერატორის პოზიცია</h3>
                         </div>
                         <div class="career-card-body">
-                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt=""><p>სრული განაკვეთი</p></div>
+                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt="">
+                                <p>სრული განაკვეთი</p>
+                            </div>
                             <div class="align-center"><img src="../../assets/images/icons/MapPin.svg" alt="">ოფისიდან</div>
                             <p class="active-date mt-8"><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
                         </div>
                     </div>
-                
+
                     <div class="career-content" data-career-id="2">
                         <div class="career-card-head align-center">
                             <img src="../../assets/images/icons/career.png" alt="">
                             <h3>სასაწყობე მეურნეობის სამსახურში, საწყობის ოპერატორის პოზიცია</h3>
                         </div>
                         <div class="career-card-body">
-                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt=""><p>სრული განაკვეთი</p></div>
+                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt="">
+                                <p>სრული განაკვეთი</p>
+                            </div>
                             <div class="align-center"><img src="../../assets/images/icons/MapPin.svg" alt="">ოფისიდან</div>
                             <p class="active-date mt-8"><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
                         </div>
@@ -539,7 +533,9 @@
                             <h3>სასაწყობე მეურნეობის სამსახურში, საწყობის ოპერატორის პოზიცია</h3>
                         </div>
                         <div class="career-card-body">
-                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt=""><p>სრული განაკვეთი</p></div>
+                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt="">
+                                <p>სრული განაკვეთი</p>
+                            </div>
                             <div class="align-center"><img src="../../assets/images/icons/MapPin.svg" alt="">ოფისიდან</div>
                             <p class="active-date mt-8"><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
                         </div>
@@ -551,7 +547,9 @@
                             <h3>სასაწყობე მეურნეობის სამსახურში, საწყობის ოპერატორის პოზიცია</h3>
                         </div>
                         <div class="career-card-body">
-                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt=""><p>სრული განაკვეთი</p></div>
+                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt="">
+                                <p>სრული განაკვეთი</p>
+                            </div>
                             <div class="align-center"><img src="../../assets/images/icons/MapPin.svg" alt="">ოფისიდან</div>
                             <p class="active-date mt-8"><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
                         </div>
@@ -563,7 +561,9 @@
                             <h3>სასაწყობე მეურნეობის სამსახურში, საწყობის ოპერატორის პოზიცია</h3>
                         </div>
                         <div class="career-card-body">
-                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt=""><p>სრული განაკვეთი</p></div>
+                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt="">
+                                <p>სრული განაკვეთი</p>
+                            </div>
                             <div class="align-center"><img src="../../assets/images/icons/MapPin.svg" alt="">ოფისიდან</div>
                             <p class="active-date mt-8"><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
                         </div>
@@ -575,7 +575,9 @@
                             <h3>სასაწყობე მეურნეობის სამსახურში, საწყობის ოპერატორის პოზიცია</h3>
                         </div>
                         <div class="career-card-body">
-                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt=""><p>სრული განაკვეთი</p></div>
+                            <div class="align-center"><img src="../../assets/images/icons/clock.svg" alt="">
+                                <p>სრული განაკვეთი</p>
+                            </div>
                             <div class="align-center"><img src="../../assets/images/icons/MapPin.svg" alt="">ოფისიდან</div>
                             <p class="active-date mt-8"><span>აქტიურია:</span> 27.05.2024-დან <span class="date">30.06.2024-მდე</span></p>
                         </div>
@@ -583,7 +585,7 @@
                 </div>
                 <!-- end career content  -->
 
-            <!-- Popup Modal -->
+                <!-- Popup Modal -->
                 <div id="careerModal" class="modal">
                     <div class="modal-content">
                         <span class="close"><img src="../../assets/images/icons/close-modal.png" alt=""></span>
@@ -633,13 +635,13 @@
                 <div class="career-detail" id="career-6-content" style="display:none;">
                     <h2>career 6</h2>
                 </div>
-                
+
             </div>
 
             <!-- end news inside contents   -->
         </div>
     </div>
-    
+
 
 
     <div class="footer-wrap">
@@ -669,7 +671,7 @@
                     <li class="footer-contact-item"><img src="../../assets/images/mail-icon.png" alt="mail"><a href="mailto:online@gwp.ge">online@gwp.ge</a></li>
                 </ul>
             </div>
-            
+
             <li class="mobile-faq"><a href="#">ხშირად დასმული კითხვები</a></li>
 
             <div class="footer-column footer-last-row">
@@ -680,15 +682,16 @@
                     <a href="#"><img src="../../assets/images/footer-social-img-you.png" alt="twitter"></a>
                 </div>
                 <div class="footer-logos align-center">
-                   <img src="../../assets/images/footer-logo-gvp.png" alt="footer-logo-gvp">
-                   <img src="../../assets/images/footer-logo-aqualia.png" alt="footer-logo-aqualia">
+                    <img src="../../assets/images/footer-logo-gvp.png" alt="footer-logo-gvp">
+                    <img src="../../assets/images/footer-logo-aqualia.png" alt="footer-logo-aqualia">
                 </div>
             </div>
         </footer>
-   </div>
+    </div>
 
     <script src="../../assets/js/scripts.js"></script>
     <script src="../../assets/js/news-pages.js"></script>
     <script src="../../assets/js/main.js"></script>
 </body>
+
 </html>
