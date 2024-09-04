@@ -5,33 +5,29 @@
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, #000 77.05%) !important;
         background-position: center;
         background-size: 200px 100%;
-    } 
-
+    }
     .home-news-cards .home-news-card:nth-child(1) img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-    } 
-
+    }
     .home-news-card:nth-child(1)::before {
-        content: "";  
+        border-radius: 0 0 12px 12px;
+        content: "";
         position: absolute;
-        bottom: 0; 
+        bottom: 0;
         left: 0;
         width: 100%;
         height: 200px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 77.05%);
-    }    
-
+    }
     .home-news-cards .home-news-card:nth-child(1) .news-date,
     .home-news-cards .home-news-card:nth-child(1) .home-news-text,
-    .home-news-cards .home-news-card:nth-child(1) .home-news-heading
-    {
+    .home-news-cards .home-news-card:nth-child(1) .home-news-heading {
         position: absolute;
         left: 24px;
         color: white;
-    } 
-
+    }
     .home-news-cards .home-news-card:nth-child(1) .news-date {
         top: 203px;
         color: #FFF;
@@ -40,7 +36,6 @@
         width: auto;
         background: none;
         padding: 0;
-        
     }
     .home-news-cards .home-news-card:nth-child(1) .home-news-heading {
         padding: 0;
@@ -64,17 +59,20 @@
         max-width: 90%;
     }
 }
+
+
 /* news page first different card on desktop  */
 
 
-
 /* start pagination-numbers  */
+
 #pagination-numbers {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 48px;
 }
+
 #pagination-numbers .arrow {
     display: inline-block;
     width: 32px;
@@ -90,10 +88,11 @@
     border: 1px solid #DFE3E8;
 }
 
-#pagination-numbers  #page-numbers {
+#pagination-numbers #page-numbers {
     display: flex;
     align-items: center;
 }
+
 #pagination-numbers .page {
     background: transparent;
     display: flex;
@@ -113,15 +112,19 @@
     font-weight: 600;
     line-height: 20px;
 }
+
 #pagination-numbers .page.active {
     border-radius: 4px;
     border: 1px solid #0576BE;
     background: white;
-    color: #0576BE;;
+    color: #0576BE;
+    ;
 }
-#pagination-numbers  .page:hover {
+
+#pagination-numbers .page:hover {
     background-color: #f0f0f0;
 }
+
 #pagination-numbers .dots {
     display: inline-block;
     width: 32px;
@@ -133,37 +136,43 @@
     line-height: 30px;
     font-weight: 600;
 }
+
 .home-news {
     margin: 0;
 }
+
 .innerpage-container {
     margin-bottom: 40px;
 }
+
 .pagination-content {
     display: flex;
     flex-direction: column;
 }
+
 .pagination-content #pagination-numbers {
     display: flex !important;
 }
+
+
 /* end news pages first blog section  */
 
 
 /* planed-works  */
+
 .content * {
     font-family: FiraGO;
     font-style: normal;
-
 }
-
 
 .city-buttons {
     display: flex;
     gap: 16px;
 }
+
 .city-buttons .tab-button {
-    color: black; 
-    background-color: white; 
+    color: black;
+    background-color: white;
     width: 105px;
     height: 36px;
     display: grid;
@@ -177,7 +186,7 @@
     cursor: pointer;
 }
 
-.city-buttons  .tab-button.active {
+.city-buttons .tab-button.active {
     border-radius: 18px;
     border: 1px solid #0576BE;
     background: #F1F6F9;
@@ -188,6 +197,7 @@
     font-style: normal;
     line-height: 18px;
 }
+
 .choose-region {
     width: 100%;
     max-width: 306px;
@@ -210,6 +220,7 @@
     background: #F9FAFB;
     max-width: 624px;
 }
+
 .region-card h4 {
     color: #000;
     font-size: 16px;
@@ -217,6 +228,7 @@
     line-height: 20px;
     max-width: 560px;
 }
+
 .region-card p {
     color: #000;
     font-size: 14px;
@@ -232,24 +244,29 @@
 
 
 /* start tenders  */
+
 .tenders-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
     justify-content: space-between;
 }
+
 .tenders-card {
     padding: 24px 16px;
     border-radius: 10px;
     border: 1px solid #E2E2E2;
     width: 412px;
 }
+
 .tenders-card .tenders-head-text a {
     max-width: 600px;
 }
-.tenders-card  .tender-title {
+
+.tenders-card .tender-title {
     margin-left: 21px;
 }
+
 .tenders-heading {
     color: #000;
     font-family: FiraGO;
@@ -259,30 +276,36 @@
     line-height: 20px;
     margin-bottom: 16px;
 }
+
 .tenders-card .tender-card-info {
     margin-top: 29px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .tender-card-info p {
     color: #000;
     font-family: FiraGO;
     font-size: 15px;
     font-weight: 400;
 }
-.tender-card-info p > span {
+
+.tender-card-info p>span {
     color: #696969;
 }
+
 .tender-card-info p .date {
     color: #F05422;
 }
 
 
 /* start documents section  */
+
 .documents {
     max-width: 930px;
 }
+
 .documents .documents-heading {
     color: #000;
     font-size: 20px;
@@ -291,6 +314,7 @@
     line-height: 132%;
     margin-bottom: 16px;
 }
+
 .documents .pdf-buttons {
     display: flex;
     flex-direction: column;
@@ -299,18 +323,20 @@
 }
 
 
-
 /* start careers page  */
+
 .career-content * {
     font-family: FiraGO;
     font-style: normal;
 }
+
 .career-content-wrap {
     display: flex;
     justify-content: space-between;
     gap: 18px;
     flex-wrap: wrap;
 }
+
 .career-content {
     width: 100%;
     max-width: 412px;
@@ -319,9 +345,11 @@
     border: 1px solid #E2E2E2;
     cursor: pointer;
 }
+
 .career-content .career-card-head {
     padding: 16px 16px 24px 16px;
-    border-bottom: 1px solid #E2E2E2;;
+    border-bottom: 1px solid #E2E2E2;
+    ;
 }
 
 .career-card-head h3 {
@@ -330,9 +358,10 @@
     font-weight: 600;
     line-height: 24px;
 }
+
 .career-card-body {
     padding: 16px 16px 24px 16px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     gap: 15px;
     color: #000;
@@ -340,11 +369,12 @@
     font-size: 15px;
     font-weight: 400;
 }
+
 .career-card-body span {
     color: #696969;
 }
 
-.active-date .date{
+.active-date .date {
     color: #F05422;
     font-weight: 600;
 }
@@ -352,7 +382,6 @@
 .career-card-body div {
     gap: 3px;
 }
-
 
 .career-popup-body {
     color: #000;
@@ -362,32 +391,37 @@
     max-width: 723px;
     padding: 16px 84px 32px 32px;
 }
+
 .list-heading {
     color: #000;
     font-weight: 600;
 }
-.career-popup-body > p {
+
+.career-popup-body>p {
     margin-top: 12px;
 }
+
 .career-popup-body li {
     list-style-type: disc;
     margin-left: 16px;
 }
 
-    
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 10; 
-    padding-top: 100px; 
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background: rgba(0, 0, 0, 0.50);}
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.50);
+}
+
 
 /* Modal Content */
+
 .modal-content {
     position: absolute;
     left: 50%;
@@ -402,16 +436,16 @@
     overflow-y: auto;
 }
 
+
 /* Close button */
+
 .modal-content .close {
     float: right;
     margin-top: 22px;
     margin-right: 22px;
 }
 
-
-
-@media (max-width: 1300px) { 
+@media (max-width: 1300px) {
     #content1 .home-news-cards {
         gap: 17px;
     }
@@ -423,14 +457,12 @@
     #content1 .home-news-card img {
         height: 141px;
     }
-    #content1 .home-news-card .news-date { 
+    #content1 .home-news-card .news-date {
         top: 126px;
     }
     .home-news-card .home-news-heading {
         font-size: 15px;
     }
-
-
     /* planed works  */
     .planned-works {
         padding: 0 16px;
@@ -448,7 +480,7 @@
     .region-inside-wrap .region-card {
         padding: 16px;
     }
-    .region-card p { 
+    .region-card p {
         color: #696969;
         font-size: 12px;
         font-style: normal;
@@ -462,12 +494,9 @@
         font-weight: 600;
         line-height: 20px
     }
-
     .region-card div img {
         display: none;
     }
-
-
     /* tenders  */
     .tenders {
         padding: 0 16px;
@@ -479,7 +508,8 @@
         max-width: 412px;
         width: 100%;
     }
-    .tenders-head-text, .tenders-heading {
+    .tenders-head-text,
+    .tenders-heading {
         font-size: 13px;
     }
     .tenders-heading {
@@ -492,8 +522,6 @@
     .tenders-card .tender-card-info {
         margin-top: 12px;
     }
-
-
     /* documents  */
     .documents {
         padding: 0 16px;
@@ -524,9 +552,6 @@
         padding-bottom: 0;
         padding-top: 16px;
     }
-
-
-
     /* career  */
     .career-content {
         height: auto;
@@ -539,14 +564,13 @@
         padding: 0;
         border: none;
         margin-bottom: 28px;
-
     }
     .career-content .career-card-head img {
         width: 24px;
         height: 24px;
         margin-right: 6px;
     }
-    .career-card-body { 
+    .career-card-body {
         padding: 0;
     }
     .career-content {
@@ -556,12 +580,12 @@
         width: 20px;
         height: 20px;
     }
-    .career-card-body p, .career-card-body div {
+    .career-card-body p,
+    .career-card-body div {
         color: #696969;
         font-size: 12px;
     }
 }
-
 
 .career-mobile-page {
     padding: 16px;
@@ -570,7 +594,7 @@
     max-width: 700px;
 }
 
-.career-mobile-page h3 { 
+.career-mobile-page h3 {
     color: #000;
     font-family: FiraGO;
     font-size: 13px;
@@ -578,6 +602,7 @@
     font-weight: 700;
     line-height: 21px;
 }
+
 .career-mobile-page li {
     list-style: disc;
 }
@@ -585,9 +610,11 @@
 .career-mobile-page ul {
     padding-left: 18px;
 }
+
 .career-mobile-page h5 {
     margin-top: 10px;
 }
+
 .career-mobile-page .text-primary {
     font-size: 12px;
 }
