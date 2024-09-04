@@ -211,7 +211,7 @@ const messagesList = document.getElementById('messagesList');
 const messageDetails = document.getElementById('messageDetails');
 const selectAllCheckbox = document.getElementById('selectAll');
 const deleteSelectedButton = document.getElementById('deleteSelected');
-const closePopupButton = document.getElementById('closePopupMsg');
+const closePopupButton = document.getElementById('closePopupMessage');
 
 function renderMessages() {
     messagesList.innerHTML = '';
@@ -269,6 +269,12 @@ deleteSelectedButton.addEventListener('click', function() {
 
 closePopupButton.addEventListener('click', function() {
     document.getElementById('messages-popup').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('messages-popup')) {
+        document.getElementById('messages-popup').style.display = 'none';
+    }
 });
 
 

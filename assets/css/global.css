@@ -21,6 +21,16 @@ a {
     cursor: pointer;
 }
 
+
+/* select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../images/icons/CaretRight.png') no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+} */
+
 :root {
     --color-primary: #0576BE;
     --color-hover: #056CAE;
@@ -367,6 +377,7 @@ a.highlited {
 
 .form-group input,
 .form-group select {
+    cursor: pointer;
     height: 44px;
     border-radius: 8px;
     border: 1px solid #CBCBCB;
@@ -376,6 +387,15 @@ a.highlited {
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../images/icons/CaretRight.png') no-repeat;
+    background-position: right 16px center;
+    background-size: 16px 16px;
 }
 
 .form-group input::placeholder {
