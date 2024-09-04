@@ -16,6 +16,11 @@
     list-style: none;
 }
 
+button,
+a {
+    cursor: pointer;
+}
+
 :root {
     --color-primary: #0576BE;
     --color-hover: #056CAE;
