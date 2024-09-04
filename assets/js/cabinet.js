@@ -301,3 +301,22 @@ function toggleCollapse(button) {
     }
 
 }
+
+// ჩვენების პოპპაპ
+// ჩვენების პოპაპი
+
+function openChvenebaPopup() {
+    document.getElementById('popup-chveneba').style.display = 'flex';
+}
+
+const closePopupCh = document.getElementById('closePopupCh');
+
+closePopup.addEventListener('click', function() {
+    document.getElementById('popup-chveneba').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('popup-chveneba')) {
+        document.getElementById('popup-chveneba').style.display = 'none';
+    }
+});
